@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	<link rel="stylesheet" type="text/css" href="fonts/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<ul>
+				<li class="sear"><i  class="icon iconfont icon-fangdajing"></i><input type="text"placeholder="小米MIX"/></li>
+				<li class="icon iconfont icon-xiaoxi"></li>
+			</ul>
+		</header>
+		<section class="section">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="images/banner1.jpg"/>
+					</div>
+					<div class="swiper-slide">
+						<img src="images/banner2.jpg"/>
+					</div>
+				</div>
+			</div>
+			<!--<script type="x/text-handlebars-template">
+				{{#each this}}
+					<div class="swiper-slide">
+						<img src="{{src}}"/>
+					</div>
+				{{/each}}
+			</script>-->
+			<div class="nav">
+				<ul>
+					<li><i class="icon iconfont icon-Instagram" ></i>活动频道</li>
+					<li><i class="icon iconfont icon-path"></i>小米闪购</li>
+					<li><i class="icon iconfont icon-zixuntianchong" ></i>好友拼团</li>
+					<li><i class="icon iconfont icon-dazhongdianping" ></i>好友拼团</li>
+				</ul>
+			</div>
+			<div class="news">
+				<ul>
+					<li><img src="images/book1.jpg"/></li>
+					<li><h4>小米之家</h4><p>距离9.9km</p></li>
+				</ul>
+				<p style="color:gray">其他零售店<i class="icon iconfont icon-chevron-thin-right"></i></p>
+			</div>
+			<div style="height:500px">
+				
+			</div>
+		</section>
+		
+		<footer>
+			<ul class="foot_list">
+				<li><i class="icon iconfont icon-shouye"></i>首页</li>
+				<li><i class="icon iconfont icon-fenlei"></i>分类</li>
+				<li><i class="icon iconfont icon-faxiandingdan"></i>发现</li>
+				<li><i class="icon iconfont icon-gouwuche"></i>购物车</li>
+				<li><i class="icon iconfont icon-wode"></i>我的</li>
+			</ul>
+		</footer>
+	</div>
+	<script src="js/libs/jquery.js"></script>
+	<script src="js/libs/swiper.min.js"></script>
+	<script>
+		new Swiper(".swiper-container",{
+			autoplay:1000,
+			loop:true
+		})
+		$(".foot_list").on("click","li",function(){
+			var ind = $(this).index();
+			
+		})
+	</script>
+</body>
+</html>
